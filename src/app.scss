@@ -14,13 +14,14 @@ body {
     position: absolute;
     top: 0;
     right: 0;
-    height: 25vh;
+    height: 30vh;
   }
   .top-left-image {
     position: absolute;
     bottom: 0;
     left: 0;
-    height: 25vh;
+    height: 30vh;
+    max-width: 100%;
   }
 }
 
@@ -33,27 +34,49 @@ body {
 
 .heading-1 {
   font-weight: 800;
-  font-size: 3.5rem;
+  font-size: 3rem;
 }
 .heading-2 {
-  font-weight: 800;
-  font-size: 4rem;
+  font-weight: 600;
+  font-size: 4.3rem;
   color: #f7b844;
+  line-height: 1.1;
 }
-.heading-3 {
-  font-weight: 800;
-  font-size: 3.5rem;
+.heading-3-container {
+  position: relative;
+  width: fit-content;
+  .heading-3 {
+    font-weight: 800;
+    font-size: 2.5rem;
+    line-height: 1;
+  }
+  .line {
+    position: absolute;
+    width: 55%;
+    height: 10px;
+    background-color: rgba(247, 184, 68, 0.5);
+    bottom: 3px;
+    z-index: -1;
+    right: -5%;
+    border-radius: 2px;
+  }
 }
 
 .tagline {
-  .tagline-1 {
-    background-color: #ff4d09;
-    width: 60%;
-  }
-  .tagline-2 {
-    background-color: #ff4d09;
-    width: 60%;
-    margin: 0.5rem 0;
+  .tagline-box {
+    .tagline-1 {
+      font-weight: 100;
+      padding: 1px 15px 1px 0;
+      background-color: #ff4d09;
+    }
+    .tagline-2 {
+      margin: 0.2rem 0;
+      padding: 1px 15px 1px 0;
+      font-weight: 100;
+      background-color: #ff4d09;
+    }
+    width: fit-content;
+    color: white;
   }
   color: white;
 }
@@ -70,4 +93,60 @@ body {
   right: 100px;
   top: 100px;
   z-index: 1;
+}
+.logo-container {
+  .logo {
+    height: 25vh;
+  }
+}
+
+.button-container {
+  text-align: end;
+}
+
+@media screen and (max-width: 400px) {
+  .heading-1 {
+    font-size: 1.8rem;
+  }
+  .heading-2 {
+    font-size: 2.8rem;
+  }
+  .heading-3-container {
+    .heading-3 {
+      font-size: 1.3rem;
+    }
+    .line {
+      bottom: 1px;
+    }
+  }
+
+  .tagline {
+    .tagline-box {
+      .tagline-1 {
+        font-size: 0.7rem;
+      }
+      .tagline-2 {
+        font-size: 0.7rem;
+      }
+    }
+  }
+
+  .header-container {
+    .top-right-image {
+      height: 20vh;
+    }
+    .top-left-image {
+      height: 20vh;
+    }
+  }
+
+  .logo-container {
+    .logo {
+      height: 20vh;
+    }
+  }
+
+  .button-container {
+    text-align: center;
+  }
 }
