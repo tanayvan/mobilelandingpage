@@ -36,7 +36,7 @@ function App() {
                 </div>
               </div>
               <div className=" button-container  ">
-                <a href="/">
+                <a href="https://apps.apple.com/us/app/tipreal/id1524131177">
                   <img
                     src={downloadOnAppStore}
                     alt="Download On App Store"
